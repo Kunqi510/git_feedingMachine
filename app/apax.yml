@@ -1,0 +1,21 @@
+name: "feeding-machine-app"
+version: 0.1.0
+type: app
+targets:
+  - "1500"
+  - plcsim
+variables:
+  APAX_BUILD_ARGS:
+    - "--debug" # Generate debug information for target "1500"
+devDependencies:
+  "@ax/sdk": 2311.0.1
+dependencies:
+  "@ax/simatic-1500-motioncontrol-v7": ^2.0.32
+  "feeding-machine-lib": ^0.1.0
+installStrategy: strict
+apaxVersion: 3.1.0
+scripts:
+  load:
+    - apax build
+    - apax sld load -t 192.168.0.1 -i ./bin/plcsim  --accept-security-disclaimer
+      -r --non-overwriting
