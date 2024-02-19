@@ -1,0 +1,12 @@
+name: "feeding-machine-app"
+version: 0.1.0
+type: app
+targets:
+  - "1500"
+variables:
+  APAX_BUILD_ARGS:
+    - "--debug" # Generate debug information for target "1500"
+dependencies:
+  "feeding-machine-lib": ^0.1.0
+devDependencies:
+  "@ax/sdk": 2311.0.1
