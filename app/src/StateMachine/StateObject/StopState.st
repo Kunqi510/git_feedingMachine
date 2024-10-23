@@ -11,7 +11,7 @@ NAMESPACE Siemens.Simatic.StateMachine
          
         //执行动作逻辑
         METHOD PUBLIC ExcuteJob
-            _feedAxis^.StopAxis(deceleration := -1.0, jerk := -3.0);
+            _feedAxis^.StopAxis(deceleration := -1.0, jerk := -2.0);
         END_METHOD
 
         //处理状态
