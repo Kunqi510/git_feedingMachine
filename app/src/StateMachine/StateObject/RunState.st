@@ -18,7 +18,7 @@ NAMESPACE Siemens.Simatic.StateMachine
             VAR_EXTERNAL
                 errorID : WORD;
             END_VAR          
-            _feedAxis^.PosAbsolute(position := 5000.0,velocity := 50.0,acceleration := -1.0,deceleration := -1.0);
+            _feedAxis^.PosAbsolute(position := 4000.0,velocity := 50.0,acceleration := -1.0,deceleration := -1.0);
         END_METHOD
 
         //处理状态
